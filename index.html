@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f3c1c1;
+    }
+    
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 800px;
+    }
+    
+    .avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    
+    .info {
+        max-width: 500px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            text-align: center;
+        }
+        .avatar {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="https://i.pinimg.com/736x/f8/45/68/f8456800ac55a50acda33ea6b9267e54.jpg" alt="Ảnh đại diện" class="avatar">
+            <div class="info">
+                <h1>Giới thiệu bản thân</h1>
+                <p>Họ tên: Lê Phạm Như Ý</p>
+                <p>Sinh viên năm 2 trường Đại học Công Nghiệp TP.HCM.</p>
+                <p>Sở thích: Âm nhạc, du lịch.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

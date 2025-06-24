@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .subject h2 {
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    
+    .subject-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .card {
+        border: 2px solid #a5c4e2;
+        padding: 20px;
+        background-color: #fafafa;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="subjects">
+        <h2> Môn học yêu thích</h2>
+        <div class="subject-grid">
+
+            <div class="card">Tiếng Anh</div>
+            <div class="card">Đồ họa ứng dụng</div>
+            <div class="card">Thương mại điện tử</div>
+        </div>
+    </div>
+</body>
+
+</html>
