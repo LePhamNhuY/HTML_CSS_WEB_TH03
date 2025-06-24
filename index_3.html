@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .table {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        font-family: sans-serif;
+    }
+    
+    .header,
+    .timetable-row {
+        display: grid;
+        grid-template-columns: 150px repeat(5, 1fr);
+        border-bottom: 1px solid #c48282;
+        text-align: center;
+    }
+    
+    .header {
+        background-color: #850c0c;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .timetable-row div,
+    .header div {
+        padding: 12px;
+        border-right: 1px solid #c48282;
+    }
+    
+    .timetable-row div:last-child,
+    .header div:last-child {
+        border-right: none;
+    }
+    
+    .timetable-row:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+</style>
+
+<body>
+    <h2>Thời khóa biểu</h2>
+    <div class="table">
+        <div class="header">
+            <div>Tiết</div>
+            <div>Thứ 2</div>
+            <div>Thứ 3</div>
+            <div>Thứ 4</div>
+            <div>Thứ 5</div>
+            <div>Thứ 6</div>
+        </div>
+
+        <div class="timetable-row">
+            <div>1</div>
+            <div>Tiếng anh 1</div>
+            <div>Đồ họa ứng dụng</div>
+            <div>Hệ thống Web</div>
+            <div>Marketing số</div>
+            <div>Lịch sử Đảng</div>
+        </div>
+
+        <div class="timetable-row">
+            <div>2</div>
+            <div>Thương mại điện tử</div>
+            <div>Lập trình Web</div>
+            <div>Cơ sở dữ liệu</div>
+            <div>Kỹ năng hoạt náo</div>
+            <div>Kiểm soát nội bộ</div>
+        </div>
+
+        <div class="timetable-row">
+            <div>3</div>
+            <div>Thực hành</div>
+            <div>Thực hành</div>
+            <div>Thực hành</div>
+            <div>Thực hành</div>
+            <div>CNTT</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
